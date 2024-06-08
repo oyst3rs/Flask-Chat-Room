@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="homepage-container">
+    <form method="post" class="chat-form">
+        <h2>Welcome to the Chat Room</h2>
+        <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" value="{{name}}" required/>
+        </div>
+        <div class="form-group">
+            <label for="code">Room Code:</label>
+            <input type="text" id="code" name="code" placeholder="Enter room code (optional)" value="{{code}}"/>
+        </div>
+        <button type="submit" name="join" class="join-btn">Join Room</button>
+        <button type="submit" name="create" class="create-btn">Create Room</button>
+        {% if error %}
+        <div class="error-msg">
+            {{error}}
+        </div>
+        {% endif %}
+    </form>
+</div>
+{% endblock %}
