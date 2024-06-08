@@ -1,0 +1,155 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message-box {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  align-items: stretch;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.messages {
+  overflow-y: scroll;
+  flex: 1;
+  padding: 10px;
+}
+
+.inputs {
+  padding: 10px;
+  display: flex;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+
+#message {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+#send-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#send-btn:hover {
+  background-color: #0056b3;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.text strong {
+  color: #007bff;
+}
+
+.muted {
+  color: #888;
+}
+
+/* Scrollbar Styles */
+.messages::-webkit-scrollbar {
+  width: 10px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+.messages::-webkit-scrollbar-track {
+  background-color: #f9f9f9;
+}
+
+.homepage-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.chat-form {
+  max-width: 400px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 95%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.join-btn, .create-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.join-btn:hover, .create-btn:hover {
+  background-color: #0056b3;
+}
+
+.error-msg {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 10px;
+}
